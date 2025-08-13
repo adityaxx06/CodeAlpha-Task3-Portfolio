@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Porfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="pic.jpeg" />
+    <script
+      src="https://kit.fontawesome.com/5f709fa141.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo1.jpg" alt="logo" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX DESIGNER</p>
+          <h1>
+            Hi, I'm <span>Aditya</span> Soni<br />
+            From India
+          </h1>
+        </div>
+        <a href="Resume.html" class="btn btn2">See Resume</a>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="pic.jpeg" alt="picture" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Hi, I'm Aditya Soni, a passionate BCA student and self-taught frontend developer based in Bilaspur, C.G. I enjoy building clean, user-friendly websites and interfaces using technologies like HTML, CSS, JavaScript, and React. With a creative eye and a focus on user experience, I’ve developed multiple real-world projects, from business websites to personal portfolios. I'm also exploring UI/UX design and always eager to learn and grow in the tech space.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX Design</span><br />Designing intuitive and
+                  visually engaging user interfaces for web and mobile
+                  applications using tools like Figma, Adobe XD, and Sketch
+                </li>
+                <li>
+                  <span>Web Development</span><br />Web/Building responsive and
+                  dynamic websites using HTML, CSS, JavaScript, React, and
+                  backend technologies like Node.js.App Development
+                </li>
+                <li>
+                  <span>App Development</span><br />Developing cross-platform
+                  mobile applications for Android and iOS using frameworks like
+                  Flutter or React Native.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Frontend Developer Intern – XYZ Tech (2023 - 2024)</span
+                  ><br />Worked on real-world web projects, implementing
+                  responsive UI with HTML, CSS, and JavaScript. Collaborated
+                  with designers to enhance user experience.
+                </li>
+                <li>
+                  <span>Freelance Web Developer (2022 - Present)</span
+                  ><br />Built custom websites for small businesses and
+                  startups, including portfolios, landing pages, and e-commerce
+                  solutions.
+                </li>
+                <li>
+                  <span
+                    >UI/UX Designer – Creative Minds Studio (2021 - 2022)</span
+                  ><br />Designed user-centered layouts and conducted user
+                  research to improve design usability and conversion rates.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Bachelor of Computer Applications (BCA) – [Your University
+                    Name]</span
+                  ><br />Studied programming, database systems, and software
+                  development methodologies. Worked on academic projects
+                  involving web and app development.
+                </li>
+                <li>
+                  <span>UI/UX Certification – Coursera / Udemy</span
+                  ><br />Completed professional-level certification courses
+                  focusing on interface design principles, wireframing, and
+                  prototyping.
+                </li>
+                <li>
+                  <span>Web Development Bootcamp – [Institute Name]</span
+                  ><br />Gained hands-on experience with front-end and back-end
+                  development, learning tools like Git, APIs, and deployment
+                  platforms.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div class="service-box">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I create modern, responsive websites that look great on all
+              devices and deliver a smooth user experience. From personal
+              portfolios to business landing pages, my designs are built to
+              engage and convert.
+            </p>
+            <a href="#services" onclick="openModal('webModal')">Learn More</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I craft user-friendly interfaces with a focus on visual hierarchy,
+              usability, and seamless interaction. I use tools like Figma and
+              Adobe XD to design wireframes, prototypes, and complete UI
+              systems.
+            </p>
+            <a href="#services" onclick="openModal('uiuxModal')">Learn More</a>
+          </div>
+          <div class="service-box">
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              I design intuitive mobile app interfaces for Android and iOS,
+              focusing on user journey and interaction flow. Whether it's a
+              productivity app or a social platform, I ensure both aesthetics
+              and functionality.
+            </p>
+            <a href="#services" onclick="openModal('appModal')">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="webModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('webModal')">&times;</span>
+        <h2>Web Design</h2>
+        <p>
+           <br/>
+          I build responsive, user-focused websites tailored to your goals —
+          whether it's growing your brand, generating leads, or selling online.
+        </p>
+        <ul>My process includes:
+          <li>Modern UI design and clean layouts</li>
+          <li>Mobile-first responsiveness</li>
+          <li>SEO-friendly structure</li>
+          <li>Fast load time and performance optimization</li>
+          <li>Integration with CMS like WordPress or custom platforms</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal" id="uiuxModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('uiuxModal')">&times;</span>
+        <h2>Web Design</h2>
+        <h4>Designing Seamless and Intuitive User Experiences</h4>
+        <p>
+          UI/UX isn't just about good looks — it's about solving problems through design.
+        </p>
+        <ul>I follow a user-centered process:
+          <li>Conduct user research and competitor analysis</li>
+          <li>Create wireframes, prototypes, and interactive mockups</li>
+          <li>Focus on accessibility and usability</li>
+          <li>Iterate designs based on feedback and testing</li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal" id="appModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('appModal')">&times;</span>
+        <h2>Web Design</h2>
+        <p>
+          Crafting High-Impact Websites That Convert. <br />
+          I build responsive, user-focused websites tailored to your goals —
+          whether it's growing your brand, generating leads, or selling online.
+        </p>
+        <ul>My process includes:
+          <li>Modern UI design and clean layouts</li>
+          <li>Mobile-first responsiveness</li>
+          <li>SEO-friendly structure</li>
+          <li>Fast load time and performance optimization</li>
+          <li>Integration with CMS like WordPress or custom platforms</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="subtitle">My work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="logo.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam facilis laborum atque reprehenderit, excepturi
+                voluptatem eligendi perferendi.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="logo.png" alt="" />
+            <div class="layer">
+              <h3>Business website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam facilis laborum atque reprehenderit, excepturi
+                voluptatem eligendi perferendi.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="logo.png  " alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam facilis laborum atque reprehenderit, excepturi
+                voluptatem eligendi perferendi.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Learn more</a>
+      </div>
+    </div>
+
+    <!-- contact  -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>adisonii2004@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 959810xxxx</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/adityaxx06"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/adityaxx06/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Aditya Soni - Resume.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="#" name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                id=""
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                id=""
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright ©2025 Aditya. Made with
+          <i class="fa-regular fa-heart"></i> by Aditya Soni
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
